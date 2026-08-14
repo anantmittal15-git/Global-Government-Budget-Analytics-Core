@@ -11,8 +11,8 @@ def run_robust_etl(csv_path):
     try:
         conn = mysql.connector.connect(
             host="localhost",
-            user="root",
-            password="root",
+            user="yourusername",
+            password="yourpassward",
             database="global_budget_db"
         )
         cursor = conn.cursor()
