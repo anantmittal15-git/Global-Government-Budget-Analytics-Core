@@ -4,7 +4,7 @@ import pandas as pd
 
 def compute_sector_correlations(country_name):
 
-    engine = create_engine("mysql+pymysql://root:root@localhost/global_budget_db")
+    engine = create_engine("mysql+pymysql://yorusername:yourpassword@localhost/global_budget_db")
 
     # Query all sector percentages for a country over its entire history
     query = """
