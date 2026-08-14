@@ -5,8 +5,8 @@ import pandas as pd
 def run_advanced_analytics():
     conn = mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="root",
+        user="yourusername",
+        password="yourpassword",
         database="global_budget_db"
     )
 
