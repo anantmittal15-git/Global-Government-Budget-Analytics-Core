@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 import pandas as pd
 
 def analyze_guns_vs_butter(selected_year=2025):
-    engine = create_engine("mysql+pymysql://root:root@localhost/global_budget_db")
+    engine = create_engine("mysql+pymysql://yourusername:yourpassword@localhost/global_budget_db")
 
     # Pivot and calculate the ratio directly inside the MySQL query engine
     query = """
