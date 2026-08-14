@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 
 def analyze_budget_volatility(country_name):
     engine = create_engine(
-        "mysql+pymysql://root:root@localhost/global_budget_db"
+        "mysql+pymysql://yourusername:yourpassword@localhost/global_budget_db"
     )
 
     # Extract historical spending sequence
