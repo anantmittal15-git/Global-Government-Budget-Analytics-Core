@@ -11,8 +11,8 @@ def generate_statistical_forecast(country_name, target_year=2035, degree=2):
 
     conn = mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="root",
+        user="yourusername",
+        password="yourpassword",
         database="global_budget_db"
     )
 
