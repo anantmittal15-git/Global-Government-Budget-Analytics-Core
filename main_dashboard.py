@@ -9,9 +9,9 @@ import numpy as np
 st.set_page_config(page_title="Global Budget Analytics Core", layout="wide")
 
 def get_engine():
-    password_quoted = urllib.parse.quote_plus("root")
+    password_quoted = urllib.parse.quote_plus("yourpassword")
     return create_engine(
-        f"mysql+mysqlconnector://root:{password_quoted}@localhost/global_budget_db"
+        f"mysql+mysqlconnector://yourusername:{password_quoted}@localhost/global_budget_db"
     )
 
 st.title("🏛️ Global Government Budget Analytics Core")
