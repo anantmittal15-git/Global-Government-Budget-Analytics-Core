@@ -110,16 +110,16 @@ year range can be plugged into instantly.
 
 ```
 ┌────────────────────┐      ┌──────────────────┐      ┌─────────────────────┐
-│  Master CSV Dataset │ ───▶ │   ETL Pipeline    │ ───▶ │   MySQL Database     │
-│ (3,654 budget rows)  │      │  (Python_sql.py)  │      │ (3 normalized tables)│
-└────────────────────┘      └──────────────────┘      └──────────┬───────────┘
-                                                                    │
-                                          ┌─────────────────────────┼─────────────────────────┐
-                                          ▼                         ▼                         ▼
+│  Master CSV Dataset│ ───▶│   ETL Pipeline    │ ───▶│   MySQL Database    │
+│ (3,654 budget rows)│      │  (Python_sql.py) │      │(3 normalized tables)│
+└────────────────────┘      └──────────────────┘      └──────────┬──────────┘
+                                                                 │
+                                       ┌─────────────────────────┼─────────────────────────┐
+                                       ▼                         ▼                         ▼
                                 ┌──────────────────┐    ┌───────────────────┐     ┌────────────────────┐
-                                │ Analytics Modules  │    │ Advanced SQL Layer │     │ Streamlit Dashboard │
-                                │ (volatility, corr,  │    │ (window functions, │     │  (main_dashboard.py)│
-                                │  outliers, forecast)│    │  CTEs, ranking)     │     │                     │
+                                │ Analytics Modules│    │ Advanced SQL Layer│     │ Streamlit Dashboard│
+                                │(volatility, corr,│    │ (window functions,│     │ (main_dashboard.py)│
+                                │outliers,forecast)│    │  CTEs, ranking)   │     │                    │
                                 └──────────────────┘    └───────────────────┘     └────────────────────┘
 ```
 
@@ -380,8 +380,7 @@ manual inspection without needing to query the database.
 
 ## 🖼️ Screenshots
 
-> Add your own screenshots to the [`screenshots/`](screenshots) folder, then
-> update the image paths below.
+
 
 | Macro Trends | Sector Spread |
 |---|---|
