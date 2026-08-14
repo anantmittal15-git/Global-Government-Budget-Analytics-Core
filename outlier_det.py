@@ -5,8 +5,8 @@ import urllib.parse
 
 def detect_budget_anomalies(country_name):
     host = "localhost"
-    user = "root"
-    password = "root"
+    user = "yourusername"
+    password = "yourpassword"
     database = "global_budget_db"
 
     password_quoted = urllib.parse.quote_plus(password)
